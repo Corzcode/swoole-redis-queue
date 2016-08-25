@@ -1,6 +1,6 @@
 # swoole-redis-queue
-![Supported PHP versions: >=5.5](http://php.net/)
-![Supported SWOOLE versions: >=1.8.10](https://github.com/swoole/swoole-src)
+![Supported PHP versions: >=5.5](https://img.shields.io/badge/php-%3E%3D5.5-blue.svg)
+![Supported SWOOLE versions: >=1.8.10](https://img.shields.io/badge/swoole-%3E%3D1.8.10-orange.svg)
 启动方式
 ------
 ```
