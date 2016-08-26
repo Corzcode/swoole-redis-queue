@@ -52,6 +52,12 @@ class MqClient
     public function __construct(array $config = array())
     {
         $this->client = new \swoole_client(SWOOLE_SOCK_TCP);
+        $this->client->set(
+            [
+                'open_length_check' => true, 
+                'package_length_type' => MqClientPacket::HEADER_PACK, 
+                'package_length_offset' => 0, 
+                'package_body_offset' => MqClientPacket::HEADER_SIZE]);
         if (! $this->client->connect($config['ip'], $config['port'], 30)) {
             throw new \Exception("connect failed. error: {$this->client->errCode}\n");
         }

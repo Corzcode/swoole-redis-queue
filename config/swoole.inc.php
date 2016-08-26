@@ -6,7 +6,7 @@ return [
     'ip' => '0.0.0.0', 
     'port' => 9570, 
     'pack_type' => 'packet', 
-    'mode' => SWOOLE_PROCESS, 
+    'mode' => SWOOLE_BASE, 
     'set' => [
         'user' => 'www', 
         'group' => 'www', 
